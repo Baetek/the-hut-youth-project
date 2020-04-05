@@ -31,6 +31,11 @@ def form():
 # [END form]
 
 
+# [START form]
+@app.route('/')
+def home():
+    return render_template('home.html')
+
 # [START submitted]
 @app.route('/submitted', methods=['POST'])
 def submitted_form():
