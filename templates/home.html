@@ -4,76 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <title>THE HUT - Temple+Shafton Youth Project</title>
-        <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>   
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="/static/app.js"></script>
 
 </head>
 
 <body>
 
-      <div class="container">
-        <!-- Page Content goes here -->
-<img class="container-width" src="{{url_for('static', filename='images/the-hut-build.png')}}" align="middle" />
+
+    <div class="container">
 
 
-<p>
-    The Hut has worked with young people since 1987,
-providing effective youth work practice. This is
-achieved through a wide range of activities, planning,
-personal and social development.
-</p>
-<p>
-    <img class="container-width" src="{{url_for('static', filename='images/community.png')}}" align="middle" />
-<br>
-    Young people attend The Hut because they know
-they are in a place that promotes relationship
-building in a safe, fun and friendly environment.
-</p>
-<p>
-    Our aim is to “Do what’s possible and Try what’s not”
-through inspiring them to reach their potential while
-becoming better active citizens.
-</p>
+        <div class="card">
+            <div class="card-content nav-card" data-target="home">
 
-<p>
-    Hopefully, you are now wondering how we will achieve this.
-    <ul>
-    <blockquote>
-        Opening when young people want the building available to them, so
-late night provision around weekends is a must for them.
+                
+                <h4>Welcome to The Hut</h4>
+                <img class="container-width" src="{{url_for('static', filename='images/the-hut-build.png')}}" align="middle" />
+                <br>
+                <p>
+                    <div id="navigation-button-container">
+                        <a class="waves-effect waves-light btn nav-action" data-target="home""><i class="material-icons left">face</i>About Us</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">face</i>Young People</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">today</i>Opportunities</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">today</i>Events</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog"><i class="material-icons left">rss_feed</i>Blog</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">insert_photo</i>Pictures</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">payment</i>Donate</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">cloud</i>Bookings</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">cloud</i>3 C's</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">cloud</i>Documents</a>
+                        <a class="waves-effect waves-light btn nav-action" data-target="blog""><i class="material-icons left">cloud</i>Contact Us</a>
+                    </div>
+                </p>
+        
+        </div>
+        <div class="card hidden nav-card" data-target="about">
+            <div class="card-content">
+                        <!-- Page Content goes here -->
 
-    </blockquote>
-        <blockquote>
-Creating opportunities that they plan not just within their own com-
-munities but the wider world.
+        <p>
+            <a class="waves-effect waves-light btn modal-trigger" href="#navigation-modal"><i class="material-icons left">apps</i>Navigation</a>
 
-    </blockquote>    <blockquote>
-Support their transition for young people to adulthood.
+        </p>
 
-    </blockquote>    <blockquote>
-Support then to improve their Health & Wellbeing.
 
-    </blockquote>    <blockquote>
-Support them with Education and Work.
+                <p>
+                    The Hut has worked with young people since 1987,
+                    providing effective youth work practice. This is
+                    achieved through a wide range of activities, planning,
+                    personal and social development.
+                </p>
+                <p>
+                    <img class="container-width" src="{{url_for('static', filename='images/community.png')}}"
+                        align="middle" />
+                </p>
+                <p>
 
-    </blockquote>    <blockquote>
-Support them in making a positive contribution to communities.
+                    Young people attend The Hut because they know
+                    they are in a place that promotes relationship
+                    building in a safe, fun and friendly environment.
+                </p>
+                <p>
+                    Our aim is to “Do what’s possible and Try what’s not”
+                    through inspiring them to reach their potential while
+                    becoming better active citizens.
+                </p>
 
-    </blockquote>    <blockquote>
-        Opening when young people want the building available to them, so
-late night provision around weekends is a must for them.
+                <p>
+                    Hopefully, you are now wondering how we will achieve this.
+                    <ul>
+                        <blockquote>
+                            Opening when young people want the building available to them, so
+                            late night provision around weekends is a must for them.
 
-    </blockquote>
-</ul>
-</p>
+                        </blockquote>
+                        <blockquote>
+                            Creating opportunities that they plan not just within their own com-
+                            munities but the wider world.
 
-  </div>
+                        </blockquote>
+                        <blockquote>
+                            Support their transition for young people to adulthood.
+
+                        </blockquote>
+                        <blockquote>
+                            Support then to improve their Health & Wellbeing.
+
+                        </blockquote>
+                        <blockquote>
+                            Support them with Education and Work.
+
+                        </blockquote>
+                        <blockquote>
+                            Support them in making a positive contribution to communities.
+
+                        </blockquote>
+                        <blockquote>
+                            Opening when young people want the building available to them, so
+                            late night provision around weekends is a must for them.
+
+                        </blockquote>
+                    </ul>
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="card hidden nav-card" data-target="blog">
+            <div class="card-content">
+                <p>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#navigation-modal"><i class="material-icons left">apps</i>Navigation</a>
+        
+                </p>
+                <h1>Blog</h1>
+            </div>
+
+        </div>
+
+    </div>
 
 
 
 </body>
+
 </html>
+
+
+
+<div id="navigation-modal" class="modal">
+    <div class="modal-content">
+        <h4>Welcome to The Hut</h4>
+        <img class="container-width" src="{{url_for('static', filename='images/the-hut-build.png')}}" align="middle" />
+        <br>
+        <p>
+            <div id="navigation-button-container">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">face</i>About Us</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">face</i>Young People</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">today</i>Opportunities</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">today</i>Events</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">rss_feed</i>Blog</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">insert_photo</i>Pictures</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Donate</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Bookings</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>3 C's</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Documents</a>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Contact Us</a>
+            </div>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat red-text">Close</a>
+    </div>
+</div>
